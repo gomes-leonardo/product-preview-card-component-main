@@ -1,0 +1,204 @@
+:root{ 
+    font-size: 62.7%;
+
+    /* Font size (paragraph): 14px */
+
+    --first-font:  'Fraunces', serif;
+    --second-font:'Montserrat', sans-serif;
+    --color-cyan: hsl(158, 36%, 37%);
+    --color-cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --color-white: hsl(0, 0%, 100%);
+    --color-darkblue: hsl(212, 21%, 14%);
+    --color-grayishblue: hsl(228, 12%, 48%)
+   
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    
+    font-size: 1.6rem;
+    background-color: var(--color-cream);
+
+
+}
+
+picture img{
+    width: 300px;
+    
+    display: flex;
+    border-radius: 8px 8px 0 0;
+    
+    
+   
+}
+
+span {
+    
+    color: var(--color-grayishblue);
+    font-family: var(--second-font);
+    font-weight: lighter;
+    font-size: 1.4rem;
+}
+
+.container{
+    width: 300px;
+    height: 423px;
+    
+    background-color: var(--color-white);
+    border-radius: 0 0 8px 8px;
+    
+}
+
+header{
+    margin-top: 42px;
+}
+
+
+h1 , span{
+    
+    padding: 12px 0 10px 18px;
+    
+}
+
+h1{
+    font-family: var(--first-font);
+    font-weight: bolder;
+    
+}
+
+section{
+    padding: 10px 0 10px 18px;
+    
+    
+}
+
+
+
+
+
+.content p{
+    font-family: var(--second-font);
+    font-size: 1.4rem;
+    color: var(--color-grayishblue);
+    line-height: 2.3rem;
+
+}
+
+#price{
+    font-size: 3.2rem;
+    font-family: var(--first-font);
+    color: var(--color-cyan);
+}
+.price-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2.2rem;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+s { 
+    font-size: 1.4rem;
+    color: var(--color-grayishblue);
+}
+
+.full-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+    align-items: center;
+}
+
+
+button{
+    width: 260px;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+   
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    
+
+    gap: 1.2rem;
+   
+
+    background-color: var(--color-cyan);
+    font-family: var(--second-font);
+    color: white;
+    font-weight: bold;
+
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+
+@media screen and (min-width:700px) {
+  
+   
+
+
+    h1{
+        font-size: 4.5rem;
+    }
+
+    .container{
+        width: 354px;
+        height: 530px;
+        
+        
+        
+        
+
+    }
+
+    .full-content{
+        margin:150px  auto;
+        display: flex;
+        flex-direction: row;
+    
+        
+    }
+
+ header{
+    display: flex;
+    flex-direction: column;
+    
+ }
+ 
+
+
+
+  .hide{
+    display: none;
+  }
+
+
+  picture img{
+    width: 354px;
+    height: 530px;
+   
+    
+  }
+  
+
+}
